@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+header nav .container--nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header nav .container--nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+header nav .container--nav ul li a {
+  text-decoration: none;
+  color: #282B22;
+}
+header nav .container--nav .nav-icon {
+  display: flex;
+  gap: 63px;
+}
+header nav .container--nav .nav-icon .right-icon-nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+header nav .container--nav .fa-solid {
+  display: none;
+}
+header .header--container {
+  background-image: url(../images/tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering\ 1.png);
+  min-height: 598px;
+  position: relative;
+}
+header .header--container .container--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  gap: 20px;
+}
+header .header--container .fon {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 43, 34, 0.3058823529);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+header .header--container .header_menu_text {
+  z-index: 3;
+  position: relative;
+}
+header .header--container .header_menu_text .head-h1 {
+  color: white;
+  font-size: 56px;
+  text-align: center;
+}
+header .header--container .header_menu_text .head-p {
+  color: white;
+  font-size: 16px;
+}
+header .header--container .header_menu_text .head-btn {
+  width: 260px;
+  height: 60px;
+  border: none;
+  color: white;
+  background-color: #AE7B3C;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.osnovni .osnovni--container {
+  width: 80%;
+  height: auto;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+.osnovni .osnovni--container h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.osnovni .osnovni--container .cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.osnovni .osnovni--container .cards .card {
+  width: 100%;
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid rgba(128, 128, 128, 0.505);
+  border-right: 2px solid rgba(128, 128, 128, 0.505);
+}
+.osnovni .osnovni--container .cards .card p {
+  font-size: 24px;
+  font-weight: 600;
+  color: grey;
+}
+.osnovni .osnovni--container .cards .card img {
+  width: 100%;
+  height: auto;
+}
+
+.services {
+  background-color: #364329;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+.services .services-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.services .services-grid .service-item {
+  text-align: center;
+}
+.services .services-grid .service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.services .services-grid .service-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  header nav .container--nav {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  header nav .container--nav ul li a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header nav .container--nav .img-nav {
+    width: 100px;
+    height: 40px;
+  }
+  header nav .container--nav .nav-icon .right-icon-nav {
+    width: 180px;
+    height: 22px;
+  }
+  .osnovni .osnovni--container .cards {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  header nav .container--nav ul {
+    display: none;
+  }
+  header nav .container--nav .img-nav {
+    width: 122px;
+    height: 52px;
+  }
+  header nav .container--nav .nav-icon-img {
+    width: 49px;
+    height: 24px;
+  }
+  header nav .container--nav .img-nav--phone {
+    width: 20px;
+    height: 22px;
+  }
+  header nav .container--nav .nav--span {
+    font-size: 18px;
+    font-weight: 600px;
+  }
+  header nav .container--nav .fa-solid {
+    display: block;
+    font-size: 30px;
+  }
+  .osnovni .osnovni--container .cards {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 431px) {
+  header nav .container--nav ul {
+    display: none;
+  }
+  header nav .container--nav .nav-icon .left-icon-nav .nav-icon-img {
+    display: none;
+  }
+  header nav .container--nav .nav-icon .right-icon-nav {
+    display: none;
+  }
+  header nav .container--nav .fa-solid {
+    display: block;
+    font-size: 50px;
+  }
+  .osnovni .osnovni--container .cards {
+    grid-template-columns: auto;
+  }
+  .osnovni .osnovni--container .cards .card {
+    border: none;
+  }
+}
+@media (max-width: 430px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+  .services-title {
+    font-size: 20px;
+  }
+  .service-item img {
+    width: 40px;
+  }
+  .service-item p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=main.css.map */
