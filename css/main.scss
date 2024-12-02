@@ -269,8 +269,16 @@ nav{
 }
 
 @media screen and (max-width: 431px) {
-    header{
-    nav{
+    header{ 
+    nav{     position: fixed; /* Headerni sahifaning yuqorisiga mahkam qiladi */
+        top: 0;
+        left: 0;
+        width: 100%; /* To'liq kenglikda bo'lishi uchun */
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 2px 4px 9px  black;
+
+
         .container--nav{
             ul{
                 display: none;
